@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gayathri M - Computer Science Engineering Graduate and Java Full Stack Developer portfolio." />
+  <title>Gayathri M | Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading portfolio">
+    <div class="loader-mark">GM</div>
+  </div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Main navigation">
+      <a href="#home" class="brand">Gayathri<span>M</span></a>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+        <i data-lucide="sun"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-pad">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Computer Science Engineering Graduate</p>
+          <h1>Gayathri M</h1>
+          <p class="typing-line">I am a <span id="typedText"></span><span class="cursor">|</span></p>
+          <p class="hero-summary">
+            Enthusiastic software developer focused on Java full stack development, responsive web interfaces,
+            practical problem solving, and building reliable applications from frontend to database.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="assets/resume/Gayathri_M_Resume.pdf" download>
+              <i data-lucide="download"></i> Download Resume
+            </a>
+            <a class="btn secondary" href="#contact">
+              <i data-lucide="send"></i> Contact
+            </a>
+          </div>
+          <div class="hero-stats glass-card">
+            <span><strong>8.5</strong> CGPA</span>
+            <span><strong>2026</strong> B.E CSE</span>
+            <span><strong>Fresher</strong> Ready to Join</span>
+          </div>
+        </div>
+        <div class="profile-stage reveal">
+          <span class="floating-badge badge-one">Java</span>
+          <span class="floating-badge badge-two">J2EE</span>
+          <span class="floating-badge badge-three">SQL</span>
+          <div class="profile-card glass-card">
+            <div class="profile-photo" aria-label="Professional profile photo placeholder">
+              <img src="assets/images/gayathri-profile.jpeg" alt="Gayathri M professional profile photo" />
+            </div>
+            <div>
+              <p class="profile-name">Gayathri M</p>
+              <p class="profile-role">Java Full Stack Developer Intern</p>
+            </div>
+          </div>
+          <div class="code-window glass-card" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <code>public class Portfolio {</code>
+            <code>&nbsp;&nbsp;String role = "Java Developer";</code>
+            <code>&nbsp;&nbsp;boolean ready = true;</code>
+            <code>}</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About</p>
+        <h2>Professional Summary</h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card info-card reveal">
+          <i data-lucide="target"></i>
+          <h3>Career Objective</h3>
+          <p>
+            Seeking a Software Developer role to apply programming skills, learn emerging technologies,
+            and contribute to innovative projects while growing in a dynamic organization.
+          </p>
+        </article>
+        <article class="glass-card info-card reveal">
+          <i data-lucide="code-2"></i>
+          <h3>Developer Profile</h3>
+          <p>
+            Knowledgeable in Java Full Stack Development with hands-on exposure to Core Java, J2EE,
+            JDBC, Servlets, JSP, HTML, CSS, JavaScript, React.js, MySQL, REST APIs, and responsive UI development.
+          </p>
+        </article>
+        <article class="glass-card education-card reveal">
+          <i data-lucide="graduation-cap"></i>
+          <h3>Education</h3>
+          <ul>
+            <li><strong>B.E Computer Science and Engineering</strong><span>KNS Institute of Technology, Bengaluru - 2026 | CGPA: 8.5</span></li>
+            <li><strong>Pre-University Course (PCMB)</strong><span>SNPU Independent PU College - 2022 | 85%</span></li>
+            <li><strong>SSLC</strong><span>SNERDT School, Hosadurga | 93.6%</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad alt-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical Toolkit</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal" data-skill="92"><div class="skill-top"><span>Core Java</span><strong>Primary</strong></div><p>OOP, collections, exception handling, Java 8 basics</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="84"><div class="skill-top"><span>Advanced Java</span><strong>Hands-on</strong></div><p>JDBC, Servlets, JSP, database connectivity</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="80"><div class="skill-top"><span>J2EE</span><strong>Learning</strong></div><p>Enterprise web application concepts and backend flow</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="88"><div class="skill-top"><span>HTML</span><strong>Strong</strong></div><p>Semantic structure, responsive sections, accessible markup</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="86"><div class="skill-top"><span>CSS</span><strong>Strong</strong></div><p>Layouts, animations, glass UI, mobile-first styling</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="78"><div class="skill-top"><span>JavaScript</span><strong>Active</strong></div><p>DOM interaction, typing effects, forms, UI behavior</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="82"><div class="skill-top"><span>SQL / MySQL</span><strong>Practical</strong></div><p>Tables, queries, records, transactions, project databases</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="78"><div class="skill-top"><span>Git & GitHub</span><strong>Versioning</strong></div><p>Repository workflow, code hosting, project collaboration</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal" data-skill="90"><div class="skill-top"><span>Problem Solving</span><strong>Consistent</strong></div><p>Logical thinking, debugging, coding challenges</p><div><b></b></div></div>
+        <div class="skill-card glass-card reveal highlight-skill" data-skill="96"><div class="skill-top"><span>HackerRank Problem Solving</span><strong>5 Star</strong></div><p class="stars" aria-label="5 star HackerRank Problem Solving rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p><div><b></b></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card glass-card reveal">
+          <img src="assets/images/drug-prediction.svg" alt="Drug prediction system interface preview" />
+          <div class="project-body">
+            <h3>Intelligent Drug Prediction Using Machine Learning</h3>
+            <p>
+              AI-based web application that predicts suitable drugs from patient health parameters using Flask
+              and Decision Tree Classifier, with patient history, doctor-patient login, drug details, and mobile-friendly UI.
+            </p>
+            <div class="tags"><span>Python</span><span>Flask</span><span>Scikit-learn</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <a class="btn small secondary" href="https://github.com/Gayathri-M160" target="_blank" rel="noreferrer"><i data-lucide="github"></i> GitHub</a>
+              <a class="btn small primary" href="#contact"><i data-lucide="external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card glass-card reveal">
+          <img src="assets/images/library-system.svg" alt="Library management system interface preview" />
+          <div class="project-body">
+            <h3>Library Management System</h3>
+            <p>
+              Mini project built to streamline book inventory, member registration, borrowing workflows,
+              database-backed book records, member details, and transaction history.
+            </p>
+            <div class="tags"><span>Java</span><span>SQL</span><span>Database Design</span><span>CRUD</span></div>
+            <div class="project-actions">
+              <a class="btn small secondary" href="https://github.com/Gayathri-M160" target="_blank" rel="noreferrer"><i data-lucide="github"></i> GitHub</a>
+              <a class="btn small primary" href="#contact"><i data-lucide="external-link"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section-pad alt-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Certifications</p>
+        <h2>Learning Credentials</h2>
+      </div>
+      <div class="cert-grid">
+        <article class="glass-card cert-card reveal"><i data-lucide="badge-check"></i><h3>Introduction to Data Science</h3><p>Cisco Networking Academy - 2025</p></article>
+        <article class="glass-card cert-card reveal"><i data-lucide="badge-check"></i><h3>Programming in Python</h3><p>SWAYAM / Dibrugarh University - 2025</p></article>
+        <article class="glass-card cert-card reveal"><i data-lucide="badge-check"></i><h3>AI Fundamentals</h3><p>IBM SkillsBuild - 2025</p></article>
+        <article class="glass-card cert-card reveal"><i data-lucide="badge-check"></i><h3>Java Full Stack Developer Internship</h3><p>Dhee Coding Lab - Present</p></article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Achievements</p>
+        <h2>Technical Accomplishments</h2>
+      </div>
+      <div class="achievement-grid">
+        <article class="glass-card achievement-card reveal featured-achievement"><i data-lucide="trophy"></i><h3>HackerRank Problem Solving</h3><p><strong>5 Star</strong> rating with active coding challenge practice and algorithm-focused exercises.</p></article>
+        <article class="glass-card achievement-card reveal"><i data-lucide="terminal-square"></i><h3>Coding Challenges</h3><p>Completed hands-on challenges in Java, SQL, frontend development, and application logic.</p></article>
+        <article class="glass-card achievement-card reveal"><i data-lucide="rocket"></i><h3>Project Delivery</h3><p>Built database-backed and AI-assisted applications with responsive interfaces and practical user flows.</p></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-pad alt-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Internship Timeline</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-dot"></div>
+        <article class="glass-card timeline-card">
+          <span>Present</span>
+          <h3>Java Full Stack Developer Intern</h3>
+          <p class="company">Dhee Coding Lab</p>
+          <ul>
+            <li>Learning Core Java, Java 8, J2EE, Servlets, Spring Boot, HTML, CSS, JavaScript, React.js, and MySQL.</li>
+            <li>Gaining hands-on frontend and backend development experience through projects and practical sessions.</li>
+            <li>Improving database connectivity, REST API understanding, responsive design, and real-time problem solving.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let Us Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details glass-card reveal">
+          <a href="mailto:gayathrim3075@gmail.com"><i data-lucide="mail"></i> gayathrim3075@gmail.com</a>
+          <a href="tel:+919686943075"><i data-lucide="phone"></i> +91 9686943075</a>
+          <a href="https://linkedin.com/in/gayathri-m-51409130b/" target="_blank" rel="noreferrer"><span class="brand-icon linkedin-icon">in</span> LinkedIn</a>
+          <a href="https://github.com/Gayathri-M160" target="_blank" rel="noreferrer"><span class="brand-icon github-icon">GH</span> GitHub</a>
+        </div>
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <label>Name<input type="text" name="name" placeholder="Your name" required /></label>
+          <label>Email<input type="email" name="email" placeholder="your@email.com" required /></label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me about the opportunity" required></textarea></label>
+          <button class="btn primary" type="submit"><i data-lucide="send"></i> Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/gayathri-m-51409130b/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span class="brand-icon linkedin-icon">in</span></a>
+      <a href="https://github.com/Gayathri-M160" target="_blank" rel="noreferrer" aria-label="GitHub"><span class="brand-icon github-icon">GH</span></a>
+      <a href="mailto:gayathrim3075@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+    </div>
+    <p>&copy; <span id="year"></span> Gayathri M. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
